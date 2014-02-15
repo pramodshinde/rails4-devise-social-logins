@@ -14,4 +14,25 @@
   <div><%= f.submit "Sign in" %></div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<h2>Sign Up using</h2>
+<table>
+  <tr>
+    <td>
+      <%= link_to "Facebook", "/users/auth/facebook" %>
+    </td>
+    <td>|</td>
+    <td>
+      <%= link_to "Google", "/users/auth/google_oauth2"%>
+    </td>
+    <td>|</td>
+    <td>
+      <%= link_to "Twitter", "/users/auth/twitter"%>
+    </td>
+    <td>|</td>
+    <td>
+      <%= link_to "LinkedIn", "/users/auth/linkedin"%>
+    </td>
+  </tr>
+</table>
+
+<% render "devise/shared/links" %>

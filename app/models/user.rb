@@ -12,7 +12,7 @@ class User
   field :reset_password_token,   :type => String
   field :reset_password_sent_at, :type => Time
 
-  has_many :login_accounts, dependent: :destroy
+  has_many :login_accounts, dependent: :destroy, class_name: "User::LoginAccount"
 
   ## Rememberable
   #field :remember_created_at, :type => Time
